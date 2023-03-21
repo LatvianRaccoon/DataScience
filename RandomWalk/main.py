@@ -20,7 +20,7 @@ print(tails)
 
 random_walk = [0]
 
-# Complete the ___
+# Complete the
 for x in range(100):
     # Set step: last element in random_walk
     step = random_walk[-1]
