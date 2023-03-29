@@ -10,7 +10,7 @@ for j in row:
     result += str(j).replace(',', '') + ","
 result = result.rstrip(',')
 print(result.strip())
-for i in range(50):
+for i in range(f.shape[0]):
     row = f.loc[i, :].values.flatten().tolist()
 
     result = ''
