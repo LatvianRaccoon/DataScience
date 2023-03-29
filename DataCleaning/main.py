@@ -4,14 +4,12 @@
 '''
 f = dataset name
 
-for i in range(1):
-    row = f.columns.tolist()
-
-    result = ''
-    for j in row:
-        result += str(j).replace(',', '') + ","
-    result = result.rstrip(',')
-    print(result.strip())
+row = f.columns.tolist()
+result = ''
+for j in row:
+    result += str(j).replace(',', '') + ","
+result = result.rstrip(',')
+print(result.strip())
 for i in range(50):
     row = f.loc[i, :].values.flatten().tolist()
 
